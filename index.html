@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h1>Exercise on Arithmetic Operators</h1> -->
+<div class="container col-lg-6 col-10 mx-auto p-lg-4 p-2 shadow-sm">
+    <h2 class="text-center my-3 text-decoration-underline">Calculator olowo pooku</h2>
+    <input type="number" class="form-control shadow-none my-3" placeholder="First Number" id="firstNumber" autofocus>
+    <input type="number" class="form-control shadow-none my-3" placeholder="Second Number" id="secondNumber">
+    <button onclick="multiply()" class="btn btn-secondary my-2">Multiply</button>
+    <button onclick="add()" class="btn btn-primary my-2">Add</button>
+    <button onclick="subtract()" class="btn btn-danger my-2">Subtract</button>
+    <button onclick="divide()" class="btn btn-dark my-2">Divide</button>
+    <button onclick="power()" class="btn btn-dark my-2">power</button>
+    <span id="show">Answer will show here</span>
+</div>
+    
+    <script>
+        // var pi = 22/7
+        // var radius = prompt("Enter the radius")
+        // console.log(radius);
+        // var areaOfACircle = (pi * (radius**2))
+        // alert("THe area of the circle is" + areaOfACircle)
+
+        console.log(firstNumber.value);
+        
+        function multiply() {
+            var numberOne = firstNumber.value
+            var numberTwo = secondNumber.value
+            var product = numberOne * numberTwo
+            show.innerHTML = '<h1 class ="text-center text-danger">' + product + '</h1>'
+            // show.innerHTML = `<h1 class ="text-center text-danger"> ${product}</h1>`
+            // alert(product)
+        }
+        
+        function add() {
+            var numberOne = firstNumber.value
+            var numberTwo = secondNumber.value
+            var sum = Number(numberOne) + Number(numberTwo)
+            show.innerHTML = '<h1 class ="text-center text-danger">' + sum + '</h1>'
+            // alert(sum)
+        }
+        
+        function subtract() {
+            var numberOne = firstNumber.value
+            var numberTwo = secondNumber.value
+            var subtraction = numberOne - numberTwo
+            show.innerHTML = '<h1 class ="text-center text-danger">' + subtraction + '</h1>'
+            // alert(subtraction)
+        }
+
+        function divide() {
+            var numberOne = firstNumber.value
+            var numberTwo = secondNumber.value
+            var division = numberOne / numberTwo
+            show.innerHTML = '<h1 class ="text-center text-danger">' + division + '</h1>'
+            // alert(division)
+        }
+        function power() {
+            var numberOne = firstNumber.value
+            var numberTwo = secondNumber.value
+            var power = numberOne ** numberTwo
+            show.innerHTML = '<h1 class ="text-center text-danger">' + power + '</h1>'
+            // alert(power)
+        }
+    </script>
+</body>
+</html>

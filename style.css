@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./top-view-notebooks-calculator_23-2149103982.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+div{
+    height: 350px;
+    position: absolute;
+    top: 150px;
+    left: 350px;
+}
+
+span{
+    position: absolute;
+    top: 280px;
+    left: 270px;
+}
